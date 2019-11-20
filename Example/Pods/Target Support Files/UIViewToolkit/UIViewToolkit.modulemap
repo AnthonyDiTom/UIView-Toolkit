@@ -1,0 +1,6 @@
+framework module UIViewToolkit {
+  umbrella header "UIViewToolkit-umbrella.h"
+
+  export *
+  module * { export * }
+}

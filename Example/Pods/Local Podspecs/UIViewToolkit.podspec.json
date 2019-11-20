@@ -1,0 +1,22 @@
+{
+  "name": "UIViewToolkit",
+  "version": "0.1.0",
+  "summary": "A short description of UIViewToolkit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Anthony Di Tomasso/UIViewToolkit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Anthony Di Tomasso": "anthony.ditomasso@outlook.com"
+  },
+  "source": {
+    "git": "https://github.com/Anthony Di Tomasso/UIViewToolkit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "UIViewToolkit/Classes/**/*"
+}

@@ -1,0 +1,6 @@
+framework module Pods_UIViewToolkit_Example {
+  umbrella header "Pods-UIViewToolkit_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
