@@ -6,12 +6,24 @@ extension UIView {
     
 
     public func fillSuperview(padding: UIEdgeInsets = .zero) {
-        anchor(top: superview?.topAnchor, leading: superview?.leadingAnchor, bottom: superview?.bottomAnchor, trailing: superview?.trailingAnchor, padding: padding)
+        
+        guard let superview = superview else {
+            print("Can't fill superview with \(self), because superview is nil")
+            return
+        }
+        
+        anchor(
+            top: superview.topAnchor,
+            leading: superview.leadingAnchor,
+            bottom: superview.bottomAnchor,
+            trailing: superview.trailingAnchor,
+            padding: padding
+        )
     }
     
     public func fillSuperview(padding: CGFloat) {
-        
-        anchor(top: superview?.topAnchor, leading: superview?.leadingAnchor, bottom: superview?.bottomAnchor, trailing: superview?.trailingAnchor, padding: .init(top: padding, left: padding, bottom: padding, right: padding))
+
+        fillSuperview(padding: .init(top: padding, left: padding, bottom: padding, right: padding))
     }
     
     public func centerInSuperview() {
@@ -27,10 +39,10 @@ extension UIView {
     }
     
     public func anchorSize(width:CGFloat, height: CGFloat) {
+        
         translatesAutoresizingMaskIntoConstraints = false
         self.widthAnchor.constraint(equalToConstant: width).isActive = true
         self.heightAnchor.constraint(equalToConstant: height).isActive = true
-
     }
     
     public func anchorSize(to view: UIView) {
@@ -39,7 +51,14 @@ extension UIView {
         heightAnchor.constraint(equalTo: view.heightAnchor).isActive = true
     }
     
-    public func anchor(top: NSLayoutYAxisAnchor? = nil, leading: NSLayoutXAxisAnchor? = nil, bottom: NSLayoutYAxisAnchor? = nil, trailing: NSLayoutXAxisAnchor? = nil, padding: UIEdgeInsets = .zero, size: CGSize = .zero) {
+    public func anchor(
+        top: NSLayoutYAxisAnchor? = nil,
+        leading: NSLayoutXAxisAnchor? = nil,
+        bottom: NSLayoutYAxisAnchor? = nil,
+        trailing: NSLayoutXAxisAnchor? = nil,
+        padding: UIEdgeInsets = .zero,
+        size: CGSize = .zero) {
+        
         translatesAutoresizingMaskIntoConstraints = false
         
         if let top = top {
