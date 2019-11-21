@@ -12,20 +12,35 @@ import UIViewToolkit
 class ViewController: UIViewController {
     
     let borderPadding: CGFloat = 12.0
-    
-    //test for gitub 2
+    let cornerRadius: CGFloat = 5.0
+
+    let redView = UIView()
+    let blueView = UIView()
+    let greenView = UIView()
+    let yellowView = UIView()
+    let purpleView = UIView()
+    let centeredView = UIView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    
+        setupColors()
         
-        let redView = UIView()
-        redView.backgroundColor = .red
+        //UIView + Layers
+        positioningViews()
+
+    }
+    
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         
-        let blueView = UIView()
-        blueView.backgroundColor = .blue
+        //UIView+Corners
+        roundCorners()
         
-        let greenView = UIView()
-        greenView.backgroundColor = .green
+    }
+    
+    func positioningViews() {
         
         [redView, blueView, greenView].forEach { view.addSubview($0) }
         
@@ -33,10 +48,8 @@ class ViewController: UIViewController {
             top: view.safeAreaLayoutGuide.topAnchor,
             trailing: view.safeAreaLayoutGuide.trailingAnchor,
             padding: .init(top: 0, left: 0, bottom: 0, right: borderPadding),
-            size: .init(width: 125, height: 0)
+            size: .init(width: 125, height: 125)
         )
-        redView.heightAnchor.constraint(equalTo: redView.widthAnchor).isActive = true
-        
         
         blueView.anchor(
             top: redView.bottomAnchor,
@@ -48,25 +61,32 @@ class ViewController: UIViewController {
         
         greenView.anchor(top: redView.topAnchor, leading: view.safeAreaLayoutGuide.leadingAnchor, bottom: blueView.bottomAnchor, trailing: redView.leadingAnchor, padding: .init(top: 0, left: borderPadding, bottom: 0, right: borderPadding))
         
-        
-        let yellowView = UIView()
-        yellowView.backgroundColor = .yellow
         greenView.addSubview(yellowView)
-        yellowView.fillSuperview(padding: borderPadding)
+        yellowView.fillSuperview(margin: borderPadding)
         
-        
-        let purpleView = UIView()
-        purpleView.backgroundColor = .purple
         redView.addSubview(purpleView)
-        purpleView.fillSuperview(padding: .init(top: 5, left: borderPadding, bottom: 5, right: borderPadding))
+        purpleView.fillSuperview(margin: .init(top: 5, left: borderPadding, bottom: 5, right: borderPadding))
         
-        let centeredView = UIView()
-        centeredView.backgroundColor = .brown
         yellowView.addSubview(centeredView)
         centeredView.centerInSuperview()
         centeredView.anchorSize(width:50, height: 50)
-
     }
     
+    func setupColors() {
+        
+        redView.backgroundColor = .red
+        blueView.backgroundColor = .blue
+        greenView.backgroundColor = .green
+        yellowView.backgroundColor = .yellow
+        purpleView.backgroundColor = .purple
+        centeredView.backgroundColor = .brown
+    }
+    
+    func roundCorners() {
+        
+        [redView, blueView, greenView, yellowView].forEach { $0.round(radius: cornerRadius) }
+        purpleView.round(corners: [.bottomLeft , .topRight], radius: cornerRadius)
+        centeredView.toCircle()
+    }
 }
 
