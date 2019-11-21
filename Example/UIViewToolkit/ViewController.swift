@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     
     let borderPadding: CGFloat = 12.0
     
-    //test for gitub
+    //test for gitub 2
     
     override func viewDidLoad() {
         super.viewDidLoad()
