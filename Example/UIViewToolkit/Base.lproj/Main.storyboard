@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Tqm-Nt-cYU">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Select a demo-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="UIViewToolkit_Example" customModuleProvider="target" sceneMemberID="viewController">
@@ -20,11 +18,123 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="5Kh-M1-a8Z">
+                                <rect key="frame" x="160" y="293.5" width="55" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cMm-8h-R1v">
+                                        <rect key="frame" x="0.0" y="0.0" width="55" height="30"/>
+                                        <state key="normal" title="Layouts"/>
+                                        <connections>
+                                            <segue destination="Amg-ll-QgD" kind="show" id="UfV-je-UzR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wfj-pX-IxF">
+                                        <rect key="frame" x="0.0" y="50" width="55" height="30"/>
+                                        <state key="normal" title="Shaking"/>
+                                        <connections>
+                                            <segue destination="ecs-eV-ZuH" kind="show" id="TXH-Je-ocL"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5Kh-M1-a8Z" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="TyO-zk-ewm"/>
+                            <constraint firstItem="5Kh-M1-a8Z" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="u2v-JT-wEu"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Select a demo" id="7Ll-nX-aUL"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1076" y="132.68365817091455"/>
+        </scene>
+        <!--shaking-->
+        <scene sceneID="uGo-7d-9vZ">
+            <objects>
+                <viewController storyboardIdentifier="ShakingViewController" id="ecs-eV-ZuH" customClass="ShakingViewController" customModule="UIViewToolkit_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9SF-Ez-O6N"/>
+                        <viewControllerLayoutGuide type="bottom" id="bKS-Sj-pvN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3BX-pF-drJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ap7-5n-pKn">
+                                <rect key="frame" x="162.5" y="293.5" width="50" height="80"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nlT-bp-5T9">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="N5u-E6-DbM"/>
+                                            <constraint firstAttribute="height" constant="50" id="yg1-ci-xjp"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="47X-I3-EEw">
+                                        <rect key="frame" x="0.0" y="50" width="50" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="shacke:" destination="ecs-eV-ZuH" eventType="touchUpInside" id="QQp-Fl-Cie"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Ap7-5n-pKn" firstAttribute="centerX" secondItem="3BX-pF-drJ" secondAttribute="centerX" id="Bzu-Y4-2ck"/>
+                            <constraint firstItem="Ap7-5n-pKn" firstAttribute="centerY" secondItem="3BX-pF-drJ" secondAttribute="centerY" id="Lye-hn-sFA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="shaking" id="2kW-6d-sIr"/>
+                    <connections>
+                        <outlet property="square" destination="nlT-bp-5T9" id="FUR-eX-XgO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j9H-aD-8w6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2017" y="440"/>
+        </scene>
+        <!--Layouts-->
+        <scene sceneID="q08-2t-qe1">
+            <objects>
+                <viewController storyboardIdentifier="LayoutsViewController" id="Amg-ll-QgD" customClass="LayoutsViewController" customModule="UIViewToolkit_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="l0a-NB-3bg"/>
+                        <viewControllerLayoutGuide type="bottom" id="kTw-Vg-LrF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bN4-pr-6cY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Layouts" id="NQX-mk-dIU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ycE-Do-Lxm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2017" y="-478"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6bi-ky-N9Q">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Tqm-Nt-cYU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QnZ-g3-n1u">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="WAk-gx-DpM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KiJ-mn-6ow" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
         </scene>
     </scenes>
 </document>

@@ -24,4 +24,8 @@ extension UIView {
         round(radius: self.frame.width / 2)
     }
 
+    public func boo() {
+        print("booo")
+    }
+    
 }
