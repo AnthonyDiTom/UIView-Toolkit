@@ -22,7 +22,7 @@ pod 'UIViewToolkit'
 
 ## Author
 
-Anthony Di Tomasso, anthony.ditomasso@outlook.com
+Anthony Di Tomasso, antho.dev@outlook.com
 
 ## License
 
