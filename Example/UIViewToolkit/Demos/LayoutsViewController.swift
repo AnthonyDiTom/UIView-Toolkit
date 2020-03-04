@@ -22,18 +22,21 @@ class LayoutsViewController: UIViewController {
     let centeredView = UIView()
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-    
+        
+        navigationItem.title = "Layouts Demo"
         setupColors()
+        
+    }
+    
+    override func loadView() {
+        
+        super.loadView()
         
         //UIView + Layers
         drawConstraints()
-
-    }
-    
-    
-    override func loadView() {
-        super.loadView()
+        
         //UIView+Corners
         roundCorners()
     }
@@ -57,7 +60,13 @@ class LayoutsViewController: UIViewController {
         blueView.anchorSize(to: redView)
         
         
-        greenView.anchor(top: redView.topAnchor, leading: view.safeAreaLayoutGuide.leadingAnchor, bottom: blueView.bottomAnchor, trailing: redView.leadingAnchor, margin: .init(top: 0, left: borderMargin, bottom: 0, right: borderMargin))
+        greenView.anchor(
+            top: redView.topAnchor,
+            leading: view.safeAreaLayoutGuide.leadingAnchor,
+            bottom: blueView.bottomAnchor,
+            trailing: redView.leadingAnchor,
+            margin: .init(top: 0, left: borderMargin, bottom: 0, right: borderMargin)
+        )
         
         greenView.addSubview(yellowView)
         yellowView.fillSuperview(margin: borderMargin)
@@ -67,11 +76,12 @@ class LayoutsViewController: UIViewController {
         
         yellowView.addSubview(centeredView)
         centeredView.centerInSuperview()
-        centeredView.anchorSize(width:50, height: 50)
+        centeredView.anchorSize(width:20, height: 20)
     }
     
     func setupColors() {
         
+        view.backgroundColor = .white
         redView.backgroundColor = .red
         blueView.backgroundColor = .blue
         greenView.backgroundColor = .green
@@ -82,9 +92,12 @@ class LayoutsViewController: UIViewController {
     
     func roundCorners() {
         
-        [redView, blueView, greenView, yellowView].forEach { $0.round(radius: cornerRadius) }
+        [redView, blueView, greenView, yellowView, centeredView].forEach {
+            $0.round(radius: cornerRadius)
+        }
+        
         purpleView.round(corners: [.bottomLeft , .topRight], radius: cornerRadius)
-        centeredView.toCircle()
+        
     }
 
 }

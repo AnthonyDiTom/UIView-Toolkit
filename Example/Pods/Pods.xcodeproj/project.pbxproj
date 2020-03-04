@@ -10,7 +10,7 @@
 		02CF5CD816CDF254F0FF42E15C6B2952 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		0E056A25241033EA00E887DA /* UIStackView+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E056A24241033E900E887DA /* UIStackView+Helpers.swift */; };
 		300247D215FFB43D052ECA8E84A2D54E /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88492A63B78113C000371EE530881E28 /* UIView+Layout.swift */; };
-		915ECA2C2550A7F9DDF7A40646E829DA /* UIView+Corners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB1DD7175D16562F4EF7E62B82CCAE7 /* UIView+Corners.swift */; };
+		915ECA2C2550A7F9DDF7A40646E829DA /* UIView+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB1DD7175D16562F4EF7E62B82CCAE7 /* UIView+Helpers.swift */; };
 		946808D4C27688EBE3C983561BEEA999 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		B4E326C78DFD74AEE5665901D5AAFB7B /* UIViewToolkit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F00C4A51B07EBA1778C141ADA3C5F5F6 /* UIViewToolkit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BADDDD13C43E683C6A0BCC836DA401B6 /* UIViewToolkit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B34681D4E651655E5CE81B9D2E1E2C79 /* UIViewToolkit-dummy.m */; };
@@ -52,7 +52,7 @@
 		3CBEEC27E08D7F363C400E9C0C5A2C4B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		41E9C40CCE8400B531E7577DC5DCC8C5 /* UIViewToolkit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UIViewToolkit.xcconfig; sourceTree = "<group>"; };
 		4296E7383D9246064C826E6A1674E2FD /* Pods-UIViewToolkit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UIViewToolkit_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		4BB1DD7175D16562F4EF7E62B82CCAE7 /* UIView+Corners.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Corners.swift"; path = "UIViewToolkit/Classes/UIView+Corners.swift"; sourceTree = "<group>"; };
+		4BB1DD7175D16562F4EF7E62B82CCAE7 /* UIView+Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Helpers.swift"; path = "UIViewToolkit/Classes/UIView+Helpers.swift"; sourceTree = "<group>"; };
 		50D4C281E511813DC501BF3D99D49417 /* Pods-UIViewToolkit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UIViewToolkit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		51C3C93E2ACAC3A41EED717B889D58C9 /* UIViewToolkit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIViewToolkit-prefix.pch"; sourceTree = "<group>"; };
 		57B6F07EA56D5EC14672C19F539F05EF /* Pods-UIViewToolkit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UIViewToolkit_Tests-dummy.m"; sourceTree = "<group>"; };
@@ -191,7 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				0E056A24241033E900E887DA /* UIStackView+Helpers.swift */,
-				4BB1DD7175D16562F4EF7E62B82CCAE7 /* UIView+Corners.swift */,
+				4BB1DD7175D16562F4EF7E62B82CCAE7 /* UIView+Helpers.swift */,
 				88492A63B78113C000371EE530881E28 /* UIView+Layout.swift */,
 				A6A003D0405DB24EC167B15E0E88FA7C /* Pod */,
 				60E46D2C209631F6E833219DDF2EE027 /* Support Files */,
@@ -392,7 +392,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				915ECA2C2550A7F9DDF7A40646E829DA /* UIView+Corners.swift in Sources */,
+				915ECA2C2550A7F9DDF7A40646E829DA /* UIView+Helpers.swift in Sources */,
 				0E056A25241033EA00E887DA /* UIStackView+Helpers.swift in Sources */,
 				300247D215FFB43D052ECA8E84A2D54E /* UIView+Layout.swift in Sources */,
 				BADDDD13C43E683C6A0BCC836DA401B6 /* UIViewToolkit-dummy.m in Sources */,

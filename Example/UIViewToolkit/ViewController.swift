@@ -15,5 +15,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     }
 
+    @IBAction func showLayoutDemo(_ sender: Any) {
+        navigationController?.pushViewController(LayoutsViewController(), animated: true)
+    }
 }
 

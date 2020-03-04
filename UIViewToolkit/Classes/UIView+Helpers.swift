@@ -18,8 +18,4 @@ extension UIView {
         layer.maskedCorners = CACornerMask(rawValue: corners.rawValue)
     }
     
-    public func toCircle() {
-        round(radius: self.frame.width / 2)
-    }
-
 }

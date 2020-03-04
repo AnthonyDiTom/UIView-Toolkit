@@ -92,7 +92,7 @@ extension UIView {
         centerXAnchor.constraint(equalTo: superview.centerXAnchor).isActive = true
     }
     
-    public func anchorSize(width:CGFloat, height: CGFloat) {
+    public func anchorSize(width: CGFloat, height: CGFloat) {
         
         translatesAutoresizingMaskIntoConstraints = false
         self.widthAnchor.constraint(equalToConstant: width).isActive = true
