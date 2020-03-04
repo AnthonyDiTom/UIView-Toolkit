@@ -18,5 +18,10 @@ class ViewController: UIViewController {
     @IBAction func showLayoutDemo(_ sender: Any) {
         navigationController?.pushViewController(LayoutsViewController(), animated: true)
     }
+    
+    
+    @IBAction func showScrollableStackView(_ sender: Any) {
+        navigationController?.pushViewController(ScrollableStackViewController(), animated: true)
+    }
 }
 

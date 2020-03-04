@@ -1,16 +1,17 @@
 //
 //  UIStackView+Helpers.swift
-//  MyBroker
+//  UIViewToolkit_Example
 //
-//  Created by Anthony Di Tomasso on 03/03/2020.
-//  Copyright © 2020 Portima. All rights reserved.
+//  Created by Anthony Di Tomasso on 15/01/2020.
+//  Copyright © 2020 CocoaPods. All rights reserved.
 //
+
 
 import UIKit
 
 extension UIStackView {
     
-    func removeAllArrangedSubviews() {
+    public func removeAllArrangedSubviews() {
         
         let removedSubviews = arrangedSubviews.reduce([]) { (allSubviews, subview) -> [UIView] in
             self.removeArrangedSubview(subview)

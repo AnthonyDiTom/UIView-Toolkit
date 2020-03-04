@@ -1,6 +1,6 @@
 //
 //  UIView+Corners.swift
-//  FBSnapshotTestCase
+//  
 //
 //  Created by Anthony Di Tomasso on 03/03/2020.
 //

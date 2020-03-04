@@ -1,8 +1,9 @@
 //
 //  UIView+Corners.swift
-//  FBSnapshotTestCase
+//  UIViewToolkit_Example
 //
-//  Created by Anthony Di Tomasso on 21/11/2019.
+//  Created by Anthony Di Tomasso on 15/01/2020.
+//  Copyright © 2020 CocoaPods. All rights reserved.
 //
 
 import UIKit
