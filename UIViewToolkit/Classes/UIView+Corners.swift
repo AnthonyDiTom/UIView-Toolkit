@@ -10,22 +10,16 @@ import UIKit
 extension UIView {
 
 
+    //Used for choose precisely corners we want rounded
+
     public func round(corners:UIRectCorner = [.bottomLeft , .bottomRight , .topLeft, .topRight], radius: CGFloat) {
-        
-        let path = UIBezierPath(roundedRect: self.bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
-        
-        let mask = CAShapeLayer()
-        mask.path = path.cgPath
-        
-        self.layer.mask = mask
+        clipsToBounds = true
+        layer.cornerRadius = radius
+        layer.maskedCorners = CACornerMask(rawValue: corners.rawValue)
     }
     
     public func toCircle() {
         round(radius: self.frame.width / 2)
     }
 
-    public func boo() {
-        print("booo")
-    }
-    
 }

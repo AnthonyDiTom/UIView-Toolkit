@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		02CF5CD816CDF254F0FF42E15C6B2952 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		0E19023623CFA7F50095029D /* UIView+Shaking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E19023423CFA6F50095029D /* UIView+Shaking.swift */; };
+		0E056A25241033EA00E887DA /* UIStackView+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E056A24241033E900E887DA /* UIStackView+Helpers.swift */; };
 		300247D215FFB43D052ECA8E84A2D54E /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88492A63B78113C000371EE530881E28 /* UIView+Layout.swift */; };
 		915ECA2C2550A7F9DDF7A40646E829DA /* UIView+Corners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB1DD7175D16562F4EF7E62B82CCAE7 /* UIView+Corners.swift */; };
 		946808D4C27688EBE3C983561BEEA999 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
@@ -40,7 +40,7 @@
 
 /* Begin PBXFileReference section */
 		094B869A323E3E2570461C77B7608321 /* UIViewToolkit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIViewToolkit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0E19023423CFA6F50095029D /* UIView+Shaking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Shaking.swift"; path = "UIViewToolkit/Classes/UIView+Shaking.swift"; sourceTree = "<group>"; };
+		0E056A24241033E900E887DA /* UIStackView+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStackView+Helpers.swift"; sourceTree = "<group>"; };
 		18D3838FCB8465ED4745843BDCCA7855 /* Pods-UIViewToolkit_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UIViewToolkit_Tests-Info.plist"; sourceTree = "<group>"; };
 		225B0685547F37ABC73F15B5C3378F24 /* Pods-UIViewToolkit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UIViewToolkit_Example-frameworks.sh"; sourceTree = "<group>"; };
 		252AFE26602E1021379DB6A973172C1E /* Pods-UIViewToolkit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-UIViewToolkit_Tests.modulemap"; sourceTree = "<group>"; };
@@ -190,7 +190,7 @@
 		ADD1B2DD0579D244FBABDB611059E4CB /* UIViewToolkit */ = {
 			isa = PBXGroup;
 			children = (
-				0E19023423CFA6F50095029D /* UIView+Shaking.swift */,
+				0E056A24241033E900E887DA /* UIStackView+Helpers.swift */,
 				4BB1DD7175D16562F4EF7E62B82CCAE7 /* UIView+Corners.swift */,
 				88492A63B78113C000371EE530881E28 /* UIView+Layout.swift */,
 				A6A003D0405DB24EC167B15E0E88FA7C /* Pod */,
@@ -392,8 +392,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E19023623CFA7F50095029D /* UIView+Shaking.swift in Sources */,
 				915ECA2C2550A7F9DDF7A40646E829DA /* UIView+Corners.swift in Sources */,
+				0E056A25241033EA00E887DA /* UIStackView+Helpers.swift in Sources */,
 				300247D215FFB43D052ECA8E84A2D54E /* UIView+Layout.swift in Sources */,
 				BADDDD13C43E683C6A0BCC836DA401B6 /* UIViewToolkit-dummy.m in Sources */,
 			);

@@ -1,10 +1,17 @@
-
+//
+//  UIView+Corners.swift
+//  FBSnapshotTestCase
+//
+//  Created by Anthony Di Tomasso on 03/03/2020.
+//
 
 import UIKit
 
 extension UIView {
     
+    
     public func anchor(
+        
         top: NSLayoutYAxisAnchor? = nil,
         leading: NSLayoutXAxisAnchor? = nil,
         bottom: NSLayoutYAxisAnchor? = nil,
@@ -58,6 +65,19 @@ extension UIView {
     public func fillSuperview(margin: CGFloat) {
 
         fillSuperview(margin: .init(top: margin, left: margin, bottom: margin, right: margin))
+    }
+    
+    public func leadAndTrailSuperView(margin: CGFloat = 0) {
+        
+        guard let superview = superview else {
+            print("Can't apply, leadAndTrailSuperView no superview found")
+            return
+        }
+        
+        self.translatesAutoresizingMaskIntoConstraints = false
+        self.leadingAnchor.constraint(equalTo: superview.leadingAnchor, constant: margin).isActive = true
+        self.trailingAnchor.constraint(equalTo: superview.trailingAnchor, constant: margin * -1).isActive = true
+        
     }
     
     public func centerInSuperview() {

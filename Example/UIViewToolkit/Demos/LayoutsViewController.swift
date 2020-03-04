@@ -27,20 +27,18 @@ class LayoutsViewController: UIViewController {
         setupColors()
         
         //UIView + Layers
-        positioningViews()
+        drawConstraints()
 
     }
     
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
+    override func loadView() {
+        super.loadView()
         //UIView+Corners
         roundCorners()
-        
     }
     
-    func positioningViews() {
+    func drawConstraints() {
         
         [redView, blueView, greenView].forEach { view.addSubview($0) }
 

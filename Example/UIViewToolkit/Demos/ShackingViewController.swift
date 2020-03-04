@@ -19,7 +19,7 @@ class ShakingViewController: UIViewController {
     }
     
     @IBAction func shacke(_ sender: Any) {
-        square.shake()
+        //square.shake()
         
     }
     
