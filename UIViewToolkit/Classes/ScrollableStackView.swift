@@ -9,11 +9,8 @@
 
 import UIKit
 
-public class Hello: NSObject {
-    
-}
 
-public class ScrollableStackView: UIScrollView {
+open class ScrollableStackView: UIScrollView {
 
     public lazy var stackView: UIStackView = {
         let sv = UIStackView()
@@ -43,7 +40,7 @@ public class ScrollableStackView: UIScrollView {
         stackView.widthAnchor.constraint(equalTo: widthAnchor).isActive = true
     }
     
-    required init?(coder: NSCoder) {
+    required public init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
