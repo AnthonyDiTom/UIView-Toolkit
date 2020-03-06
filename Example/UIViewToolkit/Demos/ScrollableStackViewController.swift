@@ -14,6 +14,8 @@ class ScrollableStackViewController: UIViewController {
     let margin: CGFloat = 16
     let radius: CGFloat = 15
     
+    let blockColor = UIColor(red: 0.27, green: 0.43, blue: 0.77, alpha: 1)
+    
     let scrollableStackView = ScrollableStackView()
     
     override func viewDidLoad() {
@@ -50,10 +52,10 @@ class ScrollableStackViewController: UIViewController {
         )
         
         scrollableStackView.addVerticalSpacing(height: margin)
-        scrollableStackView.addArrangedSubview(blockView(height: 100, color: .lightGray))
+        scrollableStackView.addArrangedSubview(blockView(height: 100, color: blockColor))
         
         scrollableStackView.addVerticalSpacing(height: margin)
-        scrollableStackView.addArrangedSubview(dualBlockView(height: 100, color: .lightGray))
+        scrollableStackView.addArrangedSubview(dualBlockView(height: 100, color: blockColor))
         
         scrollableStackView.addHeader(
             title: "Another header",
@@ -68,11 +70,11 @@ class ScrollableStackViewController: UIViewController {
         
         scrollableStackView.addVerticalSpacing(height: margin)
         
-        scrollableStackView.addArrangedSubview(blockView(height: 300, color: .lightGray))
+        scrollableStackView.addArrangedSubview(blockView(height: 300, color: blockColor))
         scrollableStackView.addVerticalSpacing(height: margin)
         
-        scrollableStackView.addArrangedSubview(blockView(height: 100, color: .lightGray))
-
+        scrollableStackView.addArrangedSubview(blockView(height: 100, color: blockColor))
+        scrollableStackView.addVerticalSpacing(height: margin)
         
     }
     
