@@ -19,6 +19,7 @@ class LayoutsViewController: UIViewController {
     let greenView = UIView()
     let yellowView = UIView()
     let purpleView = UIView()
+    let grayView = UIView()
     let centeredView = UIView()
     
     override func viewDidLoad() {
@@ -77,6 +78,11 @@ class LayoutsViewController: UIViewController {
         yellowView.addSubview(centeredView)
         centeredView.centerInSuperview()
         centeredView.anchorSize(width:20, height: 20)
+        
+        blueView.addSubview(grayView)
+        grayView.anchorSidesSize(20)
+        grayView.centerVerticaly()
+        grayView.centerHorizontaly()
     }
     
     func setupColors() {
@@ -88,6 +94,7 @@ class LayoutsViewController: UIViewController {
         yellowView.backgroundColor = .yellow
         purpleView.backgroundColor = .purple
         centeredView.backgroundColor = .brown
+        grayView.backgroundColor = .darkGray
     }
     
     func roundCorners() {

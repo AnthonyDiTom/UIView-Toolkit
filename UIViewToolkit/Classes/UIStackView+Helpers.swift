@@ -24,4 +24,31 @@ extension UIStackView {
         // Remove the views from self
         removedSubviews.forEach({ $0.removeFromSuperview() })
     }
+    
+    public func addSpacing(_ size: CGFloat, color: UIColor = .clear) {
+        
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        
+        view.backgroundColor = color
+        addArrangedSubview(view)
+        
+        switch axis {
+        case .horizontal:
+            NSLayoutConstraint.activate([
+                view.widthAnchor.constraint(equalToConstant: size),
+                view.topAnchor.constraint(equalTo: topAnchor),
+                view.bottomAnchor.constraint(equalTo: bottomAnchor)
+                
+            ])
+        case .vertical:
+            view.heightAnchor.constraint(equalToConstant: size).isActive = true
+            view.leadAndTrailSuperView()
+        @unknown default:
+            break
+        }
+        
+        
+        
+    }
 }

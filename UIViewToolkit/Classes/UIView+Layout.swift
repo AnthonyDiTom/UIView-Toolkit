@@ -99,6 +99,13 @@ extension UIView {
         self.heightAnchor.constraint(equalToConstant: height).isActive = true
     }
     
+    public func anchorSidesSize(_ size: CGFloat) {
+        
+        translatesAutoresizingMaskIntoConstraints = false
+        self.widthAnchor.constraint(equalToConstant: size).isActive = true
+        self.heightAnchor.constraint(equalToConstant: size).isActive = true
+    }
+    
     public func anchorSize(to view: UIView) {
         
         translatesAutoresizingMaskIntoConstraints = false
@@ -106,4 +113,25 @@ extension UIView {
         heightAnchor.constraint(equalTo: view.heightAnchor).isActive = true
     }
     
+    public func centerVerticaly() {
+        
+        guard let superview = superview else {
+            print("Can't center \(self), because superview is nil")
+            return
+        }
+        
+        translatesAutoresizingMaskIntoConstraints = false
+        centerYAnchor.constraint(equalTo: superview.centerYAnchor).isActive = true
+    }
+    
+    public func centerHorizontaly() {
+        
+        guard let superview = superview else {
+            print("Can't center \(self), because superview is nil")
+            return
+        }
+        
+        translatesAutoresizingMaskIntoConstraints = false
+        centerXAnchor.constraint(equalTo: superview.centerXAnchor).isActive = true
+    }
 }

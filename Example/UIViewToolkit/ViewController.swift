@@ -19,9 +19,9 @@ class ViewController: UIViewController {
         navigationController?.pushViewController(LayoutsViewController(), animated: true)
     }
     
-    
     @IBAction func showScrollableStackView(_ sender: Any) {
         navigationController?.pushViewController(ScrollableStackViewController(), animated: true)
     }
+    
 }
 
