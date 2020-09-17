@@ -92,28 +92,7 @@ extension UIView {
         centerXAnchor.constraint(equalTo: superview.centerXAnchor).isActive = true
     }
     
-    public func anchorSize(width: CGFloat, height: CGFloat) {
-        
-        translatesAutoresizingMaskIntoConstraints = false
-        self.widthAnchor.constraint(equalToConstant: width).isActive = true
-        self.heightAnchor.constraint(equalToConstant: height).isActive = true
-    }
-    
-    public func anchorSidesSize(_ size: CGFloat) {
-        
-        translatesAutoresizingMaskIntoConstraints = false
-        self.widthAnchor.constraint(equalToConstant: size).isActive = true
-        self.heightAnchor.constraint(equalToConstant: size).isActive = true
-    }
-    
-    public func anchorSize(to view: UIView) {
-        
-        translatesAutoresizingMaskIntoConstraints = false
-        widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
-        heightAnchor.constraint(equalTo: view.heightAnchor).isActive = true
-    }
-    
-    public func centerVerticaly() {
+    public func centerVerticalyInSuperview() {
         
         guard let superview = superview else {
             print("Can't center \(self), because superview is nil")
@@ -124,7 +103,7 @@ extension UIView {
         centerYAnchor.constraint(equalTo: superview.centerYAnchor).isActive = true
     }
     
-    public func centerHorizontaly() {
+    public func centerHorizontalyInSuperview() {
         
         guard let superview = superview else {
             print("Can't center \(self), because superview is nil")
@@ -133,5 +112,27 @@ extension UIView {
         
         translatesAutoresizingMaskIntoConstraints = false
         centerXAnchor.constraint(equalTo: superview.centerXAnchor).isActive = true
+    }
+    
+    
+    public func anchorSize(width: CGFloat, height: CGFloat) {
+        
+        translatesAutoresizingMaskIntoConstraints = false
+        self.widthAnchor.constraint(equalToConstant: width).isActive = true
+        self.heightAnchor.constraint(equalToConstant: height).isActive = true
+    }
+    
+    public func anchorSize(to view: UIView) {
+        
+        translatesAutoresizingMaskIntoConstraints = false
+        widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
+        heightAnchor.constraint(equalTo: view.heightAnchor).isActive = true
+    }
+    
+    public func anchorSidesSize(_ size: CGFloat) {
+        
+        translatesAutoresizingMaskIntoConstraints = false
+        self.widthAnchor.constraint(equalToConstant: size).isActive = true
+        self.heightAnchor.constraint(equalToConstant: size).isActive = true
     }
 }

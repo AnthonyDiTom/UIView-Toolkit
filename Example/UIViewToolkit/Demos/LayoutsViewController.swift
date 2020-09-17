@@ -81,8 +81,8 @@ class LayoutsViewController: UIViewController {
         
         blueView.addSubview(grayView)
         grayView.anchorSidesSize(20)
-        grayView.centerVerticaly()
-        grayView.centerHorizontaly()
+        grayView.centerVerticalyInSuperview()
+        grayView.centerHorizontalyInSuperview()
     }
     
     func setupColors() {
