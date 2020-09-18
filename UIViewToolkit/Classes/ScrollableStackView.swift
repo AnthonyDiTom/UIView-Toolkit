@@ -15,7 +15,6 @@ open class ScrollableStackView: UIScrollView {
     public lazy var stackView: UIStackView = {
         let sv = UIStackView()
         sv.translatesAutoresizingMaskIntoConstraints = false
-        sv.backgroundColor = .white
         sv.alignment = .fill
         sv.spacing = 0
         sv.distribution = .equalSpacing
