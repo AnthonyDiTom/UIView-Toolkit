@@ -21,7 +21,7 @@ let package = Package(
         .target(
             name: "UIView-Toolkit",
             dependencies: [],
-            path: "Sources",),
+            path: "Sources"),
         .testTarget(
             name: "UIView-ToolkitTests",
             dependencies: ["UIView-Toolkit"]),
