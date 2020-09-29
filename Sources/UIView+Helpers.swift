@@ -8,9 +8,10 @@
 
 import UIKit
 
+
+@available(iOS 11.0, *)
+
 extension UIView {
-
-
     //Used for choose precisely corners we want rounded
 
     public func round(corners:UIRectCorner = [.bottomLeft , .bottomRight , .topLeft, .topRight], radius: CGFloat) {
