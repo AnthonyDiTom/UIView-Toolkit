@@ -10,7 +10,6 @@ let package = Package(
         .library(
             name: "UIView-Toolkit",
             targets: ["UIView-Toolkit"]),
-            path: "Sources",
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -21,6 +20,7 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "UIView-Toolkit",
+            path: "Sources",
             dependencies: []),
         .testTarget(
             name: "UIView-ToolkitTests",
