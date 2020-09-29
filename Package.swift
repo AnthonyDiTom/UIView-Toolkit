@@ -10,6 +10,7 @@ let package = Package(
         .library(
             name: "UIView-Toolkit",
             targets: ["UIView-Toolkit"]),
+            path: "Sources"
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
