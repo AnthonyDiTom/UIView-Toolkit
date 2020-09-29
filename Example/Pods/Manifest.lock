@@ -1,5 +1,5 @@
 PODS:
-  - UIViewToolkit (0.2.1)
+  - UIViewToolkit (0.2.4)
 
 DEPENDENCIES:
   - UIViewToolkit (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  UIViewToolkit: 380755a34f8fc748722049b6ba1fe6b8bfdc869a
+  UIViewToolkit: e1998ae75fa4312e98e75300f5b505153f2d0edb
 
 PODFILE CHECKSUM: bb4d9e779dac76e2cfe680bf5e8358e4f818f982
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.9.3

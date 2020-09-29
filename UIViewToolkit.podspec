@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'UIViewToolkit'
-  s.version          = '0.2.4'
+  s.version          = '0.2.5'
   s.summary          = 'UIViewToolkit is a bunch of extentions for UIView'
 
 # This description is used to generate tags and improve search results.
@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '11.0'
   s.swift_version = '5'
-  s.source_files = 'UIViewToolkit/Classes/**/*'
+  s.source_files = 'Sources/*'
   
   # s.resource_bundles = {
   #   'UIViewToolkit' => ['UIViewToolkit/Assets/*.png']
