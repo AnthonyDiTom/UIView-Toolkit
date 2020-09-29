@@ -1,27 +1,16 @@
 PODS:
-  - FBSnapshotTestCase (2.1.4):
-    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
-  - FBSnapshotTestCase/Core (2.1.4)
-  - FBSnapshotTestCase/SwiftSupport (2.1.4):
-    - FBSnapshotTestCase/Core
-  - UIViewToolkit (0.1.0)
+  - UIViewToolkit (0.2.1)
 
 DEPENDENCIES:
-  - FBSnapshotTestCase (~> 2.1.4)
   - UIViewToolkit (from `../`)
-
-SPEC REPOS:
-  trunk:
-    - FBSnapshotTestCase
 
 EXTERNAL SOURCES:
   UIViewToolkit:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  UIViewToolkit: 0f56e92900ab38110577a45a18f3a10517922f82
+  UIViewToolkit: 380755a34f8fc748722049b6ba1fe6b8bfdc869a
 
-PODFILE CHECKSUM: 55e032a751186f4f9db424e9d24e8725d59cb7f8
+PODFILE CHECKSUM: bb4d9e779dac76e2cfe680bf5e8358e4f818f982
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.1

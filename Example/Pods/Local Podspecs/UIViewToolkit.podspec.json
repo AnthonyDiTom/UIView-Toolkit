@@ -1,22 +1,24 @@
 {
   "name": "UIViewToolkit",
-  "version": "0.1.0",
-  "summary": "A short description of UIViewToolkit.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/Anthony Di Tomasso/UIViewToolkit",
+  "version": "0.2.1",
+  "summary": "UIViewToolkit is a bunch of extentions for UIView",
+  "description": "UIViewToolkit can be use for constraints managements or UIViews modifications",
+  "homepage": "https://github.com/AnthonyDiTom/UIView-Toolkit",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "Anthony Di Tomasso": "anthony.ditomasso@outlook.com"
+    "Anthony Di Tomasso": "antho.dev@outlook.com"
   },
   "source": {
-    "git": "https://github.com/Anthony Di Tomasso/UIViewToolkit.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/AnthonyDiTom/UIView-Toolkit.git",
+    "tag": "0.2.1"
   },
   "platforms": {
     "ios": "11.0"
   },
-  "source_files": "UIViewToolkit/Classes/**/*"
+  "swift_versions": "5",
+  "source_files": "UIViewToolkit/Classes/**/*",
+  "swift_version": "5"
 }
