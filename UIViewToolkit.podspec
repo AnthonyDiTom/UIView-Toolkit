@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'UIViewToolkit'
-  s.version          = '0.3.0'
+  s.version          = '0.3.1'
   s.summary          = 'UIViewToolkit is a bunch of extentions for UIView'
 
 # This description is used to generate tags and improve search results.

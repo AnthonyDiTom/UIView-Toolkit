@@ -86,6 +86,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				0E8F5D342523BBED00C813AD /* Package.swift */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for UIViewToolkit */,
 				607FACE81AFB9204008FA782 /* Tests */,
@@ -147,7 +148,6 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				0E8F5D342523BBED00C813AD /* Package.swift */,
 				91FC874C0AB3E773BF7DC073 /* UIViewToolkit.podspec */,
 				160437B5514D59627B62AE4C /* README.md */,
 				B010FAE60B7F2479214AA198 /* LICENSE */,
